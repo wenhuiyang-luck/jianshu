@@ -14,15 +14,13 @@ function App() {
       <GlobalStyle />
       <IconFontGlobalStyle />
       <Provider store={store}>
-        <div>
-          <Header />
-          <BrowserRouter>
-            <div>
-              <Route path="/" exact component={Home}></Route>
-              <Route path="/detail" exact component={Detail}></Route>
-            </div>
-          </BrowserRouter>
-        </div>
+        <BrowserRouter>
+          <div>
+            <Header />
+            <Route path="/" exact component={Home}></Route>
+            <Route path="/detail" exact component={Detail}></Route>
+          </div>
+        </BrowserRouter>
       </Provider>
     </div>
   );

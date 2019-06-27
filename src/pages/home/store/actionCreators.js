@@ -37,3 +37,8 @@ export const addArticleList = (page) => {
     })
   }
 }
+
+export const toggleScrollTopShow = (show) => ({
+  type: actionTypes.TOGGLE_SCROLL_TOP_SHOW,
+  show: show
+})
