@@ -7,7 +7,7 @@ class Writer extends Component {
     return (
       <div>
         <WriterRecommendImg>
-          <img  className="pic" src="//cdn2.jianshu.io/assets/ads/java-62d16127d94c8ca4c8a40ada899c97f4.png" />
+          <img alt='' className="pic" src="//cdn2.jianshu.io/assets/ads/java-62d16127d94c8ca4c8a40ada899c97f4.png" />
           <span>广告</span>
         </WriterRecommendImg>
         <WriterTitle>
@@ -20,7 +20,7 @@ class Writer extends Component {
           {
             this.props.list.map((item) => (
               <WriterItem key={item.get('id')}>
-                <img  className="item-pic" src={item.get('avatarUrl')}/>
+                <img alt='' className="item-pic" src={item.get('avatarUrl')}/>
                 <WriterInfo>
                   <h3 className="title">{item.get('chName')}<WriterFollow>+ 关注</WriterFollow></h3>
                   <p className="desc">{item.get('desc')}</p>
@@ -31,7 +31,7 @@ class Writer extends Component {
           <MoreWriter>查看全部 ></MoreWriter>
         </WriterItemWrapper>
         <WriterRecommendImg>
-        <img  className="pic" src="https://oimagec6.ydstatic.com/image?id=8869525919655038784&product=adpublish&w=1280&h=720&sc=0&rm=2&gsb=0&gsbd=60" />
+        <img alt='' className="pic" src="https://oimagec6.ydstatic.com/image?id=8869525919655038784&product=adpublish&w=1280&h=720&sc=0&rm=2&gsb=0&gsbd=60" />
           <span>广告</span>
         </WriterRecommendImg>   
       </div>

@@ -259,3 +259,16 @@ export const MoreWriter = styled.div`
   border-radius: 4px;
   box-sizing: border-box;
 `
+export const BackTop = styled.div`
+  position: fixed;
+  right: 100px;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+`
