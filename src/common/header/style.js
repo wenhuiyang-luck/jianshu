@@ -36,8 +36,9 @@ export const NavItem = styled.div`
   }
   height: 56px;
   padding: 0 15px;
-  font-size: 17px;
+  font-size: 16px;
   color: #333;
+  cursor: pointer;
 `
 
 export const SearchWrapper = styled.div`
