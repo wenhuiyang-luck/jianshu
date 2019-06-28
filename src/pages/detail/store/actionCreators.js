@@ -9,9 +9,9 @@ const changeDetail = (res) => ({
   writerInfo: fromJS(res.writerInfo)
 })
 
-export const getDetail = () => {
+export const getDetail = (id) => {
   return (dispatch) => {
-    axios.get('api/detail.json').then((res) => {
+    axios.get('/api/detail.json?id=' + id).then((res) => {
       dispatch(changeDetail(res.data.data))
     }).catch((err) => {
       console.log(err)
