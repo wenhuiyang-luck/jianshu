@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { actionCreators } from './store'
+import { withRouter } from 'react-router-dom'
 import {
   DetailWrapper,
   Header,
@@ -59,4 +60,4 @@ const mapDipatch = (dispatch) => ({
   }
 })
 
-export default connect(mapState, mapDipatch)(Detail)
+export default connect(mapState, mapDipatch)(withRouter(Detail))
